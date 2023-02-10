@@ -1,4 +1,4 @@
-package org.example;
+package pl.jtrawnicki.averagecounter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,8 +20,7 @@ public class Main {
         numbers.add(secondNumber);
 
         do {
-            System.out.println("1. Dodaj kolejną liczbę \n" +
-                    "2. Wylicz średnią arytmetyczną");
+            System.out.println("1. Dodaj kolejną liczbę \n" + "2. Wylicz średnią arytmetyczną");
 
             int userChoice = scanner.nextInt();
 
