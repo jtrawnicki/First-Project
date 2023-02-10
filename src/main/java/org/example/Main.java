@@ -10,13 +10,13 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         boolean shouldContiniue = true;
-        List<Float> numbers = new ArrayList<>();
+        List<Integer> numbers = new ArrayList<>();
 
         System.out.print("Wprowadź pierwszą liczbę: ");
-        float firstNumber = scanner.nextInt();
+        int firstNumber = scanner.nextInt();
         numbers.add(firstNumber);
         System.out.print("Wprowadź kolejną liczbę: ");
-        float secondNumber = scanner.nextInt();
+        int secondNumber = scanner.nextInt();
         numbers.add(secondNumber);
 
         do {
@@ -28,8 +28,8 @@ public class Main {
             switch (userChoice) {
                 case 1:
                     System.out.print("Wprowadź liczbę: ");
-                    float anotherNumber = scanner.nextInt();
-                    numbers.add(anotherNumber);
+                    int nextNumber = scanner.nextInt();
+                    numbers.add(nextNumber);
                     break;
                 case 2:
                     System.out.print("Średnia arytmetyczna wprowadzonych liczb to: " + countAverage(numbers));
@@ -40,9 +40,9 @@ public class Main {
 
     }
 
-    public static float countAverage(List<Float> list) {
+    public static float countAverage(List<Integer> list) {
         float sum = 0;
-        for (Float number : list) {
+        for (int number : list) {
             sum += number;
         }
         float average = (sum / list.size());
