@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static java.lang.Float.NaN;
-import static org.junit.jupiter.api.Assertions.assertEquals;;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AverageCounterTest {
 
@@ -68,6 +68,37 @@ public class AverageCounterTest {
             //then
 
             assertEquals(expected, result);
+        }
+
+        @Test
+
+        void shouldCountAverage3() {
+            //given
+
+            float expectedResult = 34.272728F;
+
+            List<Integer> numbers = new ArrayList<>();
+
+            numbers.add(1);
+            numbers.add(3);
+            numbers.add(99);
+            numbers.add(12);
+            numbers.add(72);
+            numbers.add(34);
+            numbers.add(11);
+            numbers.add(2);
+            numbers.add(77);
+            numbers.add(59);
+            numbers.add(7);
+
+            //when
+
+            float result = Main.countAverage(numbers);
+
+            //when
+
+            assertEquals(expectedResult, result);
+
         }
 
 
