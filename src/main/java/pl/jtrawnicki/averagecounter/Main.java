@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("Mała zmiana...123");
         System.out.println("Obliczanie średniej arytmetyczniej wprowadzonych liczb.");
 
         Scanner scanner = new Scanner(System.in);
